@@ -8,6 +8,7 @@ function onlyOneWord (array) {
 
 function positiveRowsOnly (array) {
   // your code here
+
 };
 
 function allSameVowels (array) {
