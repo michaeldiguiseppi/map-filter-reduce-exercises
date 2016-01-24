@@ -33,10 +33,19 @@ function luckyNumbers (array) {
   // turn it into a string
   // concatinate the values into a fortune-like sentence
   // return the string
-  return array.reduce(function(all, item) {
-        all + item;
-        return all;
-  }, 'Your lucky numbers are: ');
+  var string = 'Your lucky numbers are: ';
+  for (var i = 0; i < array.length; i++) {
+    if (array[i] === array[array.length - 1]) {
+      string = string + ('and ' + array[i]);
+    } else {
+    string = string + (array[i] + ', ');
+    };
+  };
+  console.log(string);
+  return string;
+//   return array.reduce(function(numbersArray, number, totalArray) {
+//       return numbersArray.toString() + ', ' + number.toString();
+//   }, 'Your lucky numbers are: ');
 };
 
 module.exports = {
