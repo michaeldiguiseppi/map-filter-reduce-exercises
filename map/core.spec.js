@@ -16,22 +16,22 @@ describe('Map', function() {
     });
   });
 
-  // describe('#onlyVowels()', function () {
-  //   it('removes any non-vowel character from words in an array', function () {
-  //     var array = ['average', 'exceptional', 'amazing'];
-  //     assert.deepEqual(['aeae', 'eeioa', 'aai'], core.onlyVowels(array));
-  //   });
-  // });
+  describe('#onlyVowels()', function () {
+    it('removes any non-vowel character from words in an array', function () {
+      var array = ['average', 'exceptional', 'amazing'];
+      assert.deepEqual(['aeae', 'eeioa', 'aai'], core.onlyVowels(array));
+    });
+  });
 
-//   describe('#doubleMatrix()', function () {
-//     it('doubles the numbers in the matrix, maintaining the same structure', function () {
-//       var matrix = [[1,2,3],
-//                     [4,5,6],
-//                     [7,8,9]];
-//       var result = [[2,4,6],
-//                     [8,10,12],
-//                     [14,16,18]];
-//       assert.deepEqual(result, core.doubleMatrix(matrix));
-//     });
-//   });
+  describe('#doubleMatrix()', function () {
+    it('doubles the numbers in the matrix, maintaining the same structure', function () {
+      var matrix = [[1,2,3],
+                    [4,5,6],
+                    [7,8,9]];
+      var result = [[2,4,6],
+                    [8,10,12],
+                    [14,16,18]];
+      assert.deepEqual(result, core.doubleMatrix(matrix));
+    });
+  });
  });
