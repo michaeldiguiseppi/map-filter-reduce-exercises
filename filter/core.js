@@ -18,7 +18,7 @@ function positiveRowsOnly (array) {
   // filter within filter
   return array.filter(function(value) {
     // console.log('Value: ', value);
-    var filtered = value.filter(function(num, index) {
+    var filtered = value.filter(function(num) {
         // console.log('Num: ', num, 'Index: ', index);
         return num > 0;
     });
